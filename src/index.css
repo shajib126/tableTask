@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  
 }
 .tableList{
   
@@ -10,14 +11,14 @@ table{
   border-collapse:collapse ;
   width: 69.8%;
   margin-right: 5px;
- 
+  
 }
 .heading{
   background-color: #B5B5B5;
-  width: 86.8%;
-  margin-left: 11.2%;
+  width: 84.4%;
+  margin-left: 12%;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 .rawmat{
   background-color: #16364A;
@@ -25,6 +26,8 @@ table{
   color: white;
   width: 69.2%;
   margin-left: 30%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0.3rem;
 }
 .sideAndtable{
@@ -32,20 +35,25 @@ table{
   justify-content: space-between;
   
 }
-table th{
-  background-color: gray;
-}
-table th,td{
+thead th{
+  background-color: #B5B5B5;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
   border: 1px solid #ddd;
-  text-align: center;
-  padding: 1rem;
+}
+tbody tr td{
+  border: 1px solid #ddd;
+  text-align: center;  
+  font-weight: 600;
+padding: 0.8rem;
+  
 }
 
 table .green{
-  background: rgb(78, 228, 78);
+  background: #88FB4E;
 }
 table .orange{
-  background: rgb(223, 152, 21);
+  background: #FDAE01;
 }
 .red{
   background-color: #ed220c;
@@ -65,6 +73,13 @@ table .orange{
   
 
 }
+.navbar nav i{
+  width: 30px;
+  
+  padding:0 1rem;
+  position: relative;
+  left: 80%;
+}
 .navbar nav img{
   width: 30px;
   
@@ -73,14 +88,18 @@ table .orange{
   left: 80%;
 }
 aside{
-  width: 8%;
+  width: 10%;
   background-color: #16364A;
-  margin-top: -6rem;
-  padding:0.5rem 1rem;
-  height: 100vh;
+  margin-top: -10rem;
+  padding:0.5rem 0.1rem;
+  height: 150vh;
   
 }
-aside ul li{
+.sidemenu{
+  padding-left: 1.5rem;
+  margin-top: 3rem;
+}
+.sidemenu li{
   list-style: none;
   text-align: left;
   color: white;
@@ -119,12 +138,12 @@ aside ul li{
 .yellow{
   width: 15px;
   height: 20px;
-  background: #fead01;
+  background: #FDAE01;
 }
 .green{
   width: 15px;
   height: 20px;
-  background: #88fa4e;
+  background: #88FB4E;
 }
 
 .branchAndQuantity{
@@ -153,8 +172,15 @@ aside ul li{
   display: flex;
   justify-content: space-between;
   width: 80%;
+  
+}
+.flexcol2{
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  
 }
 .tc{
-  width: 60%;
+  width: 80%;
   margin: auto;
 }

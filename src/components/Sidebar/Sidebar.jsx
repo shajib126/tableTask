@@ -4,13 +4,13 @@ const Sidebar = () => {
   return (
     <>
         <aside>
-        <ul>
+        <div className='sidemenu'>
             <li><img src={message} alt="" />Home</li>
             <li><img src={message} alt="" />Users</li>
             <li><img src={message} alt="" />Products</li>
             <li><img src={message} alt="" />Orders</li>
             <li><img src={message} alt="" />Bulk Orders</li>
-        </ul>
+        </div>
       </aside>
     </>
   )

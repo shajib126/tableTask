@@ -31,7 +31,7 @@ const Table = (props) => {
       </thead>
       <tbody>
         {data?.data.map((d, i) => (
-          <tr className={data.green == true ? 'green' : data.orange == true ? 'orange' : i<10 ? 'green' : 'orange'} key={i}>
+          <tr className={data.green == true && data.orange ==true?i<10 ? 'green' : 'yellow' : data.green == true ? 'green' : data.orange == true ? 'yellow' : i<10 ? 'green' : 'yellow'} key={i}>
             <td>{d.dueDate}</td>
             <td className={d.invNumber < 0 && 'red'}>{d.invNumber}</td>
             <td className={d.invNumber < 0 && 'red'}>{d.partNumber}</td>

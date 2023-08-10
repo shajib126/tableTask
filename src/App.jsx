@@ -64,7 +64,7 @@ function App() {
                       type="checkbox"
                       value="green"
                     />
-                    <span className="green">.</span>
+                    <span className="green"></span>
                     <div className="flexcol">
                       <p>Forcast</p>
                       <p>60</p>
@@ -76,7 +76,7 @@ function App() {
                       onClick={(e) => setOrange(e.target.checked)}
                       type="checkbox"
                     />
-                    <span className="yellow">.</span>
+                    <span className="yellow"></span>
                     <div className="flexcol">
                       <p>Firm Orders</p>
                       <p>30</p>
@@ -85,7 +85,8 @@ function App() {
 
                   <div className="inputgroup">
                     <input type="checkbox" name="" id="" />
-                    <div className="flexcol">
+                    <span></span>
+                    <div className="flexcol2">
                       <p>Include POs</p>
                       <p>30</p>
                     </div>
