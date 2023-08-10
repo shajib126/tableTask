@@ -1,6 +1,14 @@
 
-const Table = (data) => {
-  console.log(data.data);
+const Table = (props) => {
+  const data = props
+  console.log(data);
+  let classname;
+
+  if(data.green){
+    classname = 'green'
+  }else if(data.orange){
+    classname = 'orange'
+  }
   return (
     <>
     
@@ -23,14 +31,14 @@ const Table = (data) => {
       </thead>
       <tbody>
         {data?.data.map((d, i) => (
-          <tr className={i <= 10 ? 'green':'orange'} key={i}>
+          <tr className={data.green == true ? 'green' : data.orange == true ? 'orange' : i<10 ? 'green' : 'orange'} key={i}>
             <td>{d.dueDate}</td>
             <td className={d.invNumber < 0 && 'red'}>{d.invNumber}</td>
             <td className={d.invNumber < 0 && 'red'}>{d.partNumber}</td>
             <td>{d.partLength}</td>
             <td>{d.processLength}</td>
             <td>{d.quantity}</td>
-            <td className={d.invNumber < 0 ?'red' :''}>{d.avgCost}</td>
+            <td className={d.invNumber < 0 ?'red' :''}>${d.avgCost}</td>
             <td className={d.invNumber < 0 && 'red'}>{d.pcs}</td>
             <td className={d.invNumber < 0 && 'red'}>{d.quantity}</td>
             <td className={d.balance < 0 && 'red'}>{d.balance}</td>
